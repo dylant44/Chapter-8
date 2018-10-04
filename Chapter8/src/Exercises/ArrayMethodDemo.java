@@ -9,26 +9,35 @@ public class ArrayMethodDemo
 	{
 		
 		double[] arrayNums = new double[10];
-		double userEntry;
 		double total = 0;
-		double avg = 0;
-		int quit = 0;
+		int i = 0;
+		double quit = 0;
+		
 		Scanner input = new Scanner(System.in);
 		
-		for(int i = 0; i < arrayNums.length; i++) 
+		while(quit != 999)
 		{
-			System.out.println("Enter a number >> ");
+			System.out.print("Enter a number >>");
 			arrayNums[i] = input.nextDouble();
-		}
-
-		System.out.println(arrayNums[10]);
-		
 			
-		
-	//displayNumbers();
-	//displayReverse();
-	//displatTotal;
-	//displayHigherThanAverage();
+			total = total + arrayNums[i];
+			i++;
+			System.out.print("Another number? to quit 999");
+			quit = input.nextDouble();
+		}
+		for(int j = 0; j < arrayNums.length; ++j) {
+			System.out.println(arrayNums[j]);
+		}
+		System.out.print("Sum: " + total);
+		displayReverse(arrayNums); 
+	}
+	public static void displayReverse(double []arrayNums) {
+	for(int k = 0; k > arrayNums.length; k--)
+	{
+		System.out.print(arrayNums[k]);
+	}
 	}
 
+	
+	
 }
