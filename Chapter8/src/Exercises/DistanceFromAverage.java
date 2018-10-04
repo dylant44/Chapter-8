@@ -10,33 +10,25 @@ public class DistanceFromAverage
 		
 		double[] arrayNums = new double[20];
 		double userEntry;
+		double total = 0;
+		double avg = 0;
+		int i = 0;
+		int quit = 0;
 		Scanner input = new Scanner(System.in);
 		
-		While(quit !=99999){
-			
-		}(int i = 0; i < arrayNums.length; i++) 
-		{
-			System.out.println("Enter a number >> ");
-			arrayNums[i] = input.nextDouble();
-		}
 		
+		System.out.println("Enter a number >> ");
 		
-		System.out.println("The output is: ");
-		for(int j = 19; j >= 0; j--)
-		{
-			System.out.println(arrayNums[j]);
-		}
+			while(quit != 999) 
+			{
+				arrayNums[i] = input.nextDouble();
+				total = total + arrayNums[i];
+				System.out.println("Another number? 999 to quit ");
+				quit = input.nextInt();
+			}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		avg = total / arrayNums.length;
+	
 		
 	}
 
