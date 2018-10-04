@@ -25,17 +25,19 @@ public class ArrayMethodDemo
 			System.out.print("Another number? to quit 999");
 			quit = input.nextDouble();
 		}
-		for(int j = 0; j < arrayNums.length; ++j) {
+		for(int j = 0; j < arrayNums.length; ++j) 
+		{
 			System.out.println(arrayNums[j]);
 		}
 		System.out.print("Sum: " + total);
 		displayReverse(arrayNums); 
 	}
-	public static void displayReverse(double []arrayNums) {
-	for(int k = 0; k > arrayNums.length; k--)
+	public static void displayReverse(double[] arrayNums) 
 	{
-		System.out.print(arrayNums[k]);
-	}
+		for(int k = 0; k > arrayNums.length; k--)
+		{
+			System.out.println(arrayNums[k]);
+		}
 	}
 
 	
