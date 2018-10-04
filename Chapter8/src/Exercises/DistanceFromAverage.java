@@ -12,7 +12,9 @@ public class DistanceFromAverage
 		double userEntry;
 		Scanner input = new Scanner(System.in);
 		
-		for(int i = 0; i < arrayNums.length; i++) 
+		While(quit !=99999){
+			
+		}(int i = 0; i < arrayNums.length; i++) 
 		{
 			System.out.println("Enter a number >> ");
 			arrayNums[i] = input.nextDouble();
@@ -24,6 +26,7 @@ public class DistanceFromAverage
 		{
 			System.out.println(arrayNums[j]);
 		}
+		
 		
 		
 		
